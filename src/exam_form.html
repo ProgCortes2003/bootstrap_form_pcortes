@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,459 @@
     <link rel="stylesheet" href="./main.css">
     <title>web engineering first exam</title>
 </head>
-<body>
-    <section class="container">
 
+<body>
+    <!-- #FORMULARIO 2 ESCOGIDO -->
+    <section class="container-md d-grid bg-primary">
+        <div class="row">
+            <div class="row">
+                <p class="fs-1 ">Historia de Salud</p>
+            </div>
+            <div class="row ">
+                <ul class="list-inline d-flex flex-row justify-content-between">
+                    <li class="list-inline-item fs-5">Paciente</li>
+                    <li class="list-inline-item fs-5">Edad: 18</li>
+                    <li class="list-inline-item fs-5">Doctor</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Cuerpo del formulario -->
+        <div class="row">
+            <!-- header del formulario-->
+            <div class="row">
+                <ul class="nav d-flex flex-row justify-content-around bg-body-tertiary">
+                    <li class="nav-item">
+                        <a href="" class="nav-link align-self-center">Datos Personales y Antecedentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link align-self-center">Interpretación y Conducta</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- seccion 1 del formulario #1-->
+            <div class="row">
+                <div class="row">
+                    <div class="row">
+                        <div class="col-8">
+                            <div class="row">
+                                <ul class="list-inline d-flex flex-row">
+                                    <li class="inline-item">
+                                        <select name="" id="" class="form-select">
+                                            <option value="1">Tarjeta Identidad</option>
+                                            <option value="2">Cedúla Ciudadanía</option>
+                                            <option value="3">Cedúla Extranjería</option>
+                                            <option value="4">Permiso Especial</option>
+                                        </select>
+                                    </li>
+                                    <li class="inline-item">
+                                        <div>
+                                            <label for="numeroDocumento"></label>
+                                            <input type="text" class="form-control" id="numeroDocumento"
+                                                placeholder="No. de Documento">
+                                        </div>
+                                    </li>
+                                    <li class="inline-item">
+                                        <div>
+                                            <label for="fecha">Fecha</label>
+                                            <input type="text" class="form-control" id="fecha">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="list-inline d-flex flex-row">
+                                    <li class="inline-item">
+                                        <span>Examen</span>
+                                        <select name="" id="" class="form-select">
+                                            <option value="1">Ingreso</option>
+                                        </select>
+                                    </li>
+                                    <li class="inline-item">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="vertigo">
+                                            <label class="form-check-label" for="vertigo">
+                                                Vértigo
+                                            </label>
+                                        </div>
+                                    </li>
+                                    <li class="inline-item">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="osteomuscular">
+                                            <label class="form-check-label" for="osteomuscular">
+                                                Osteomuscular
+                                            </label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <label for="nombreEmpresa">Empresa</label>
+                                <input type="text" class="form-control" id="nombreEmpresa" placeholder="Nombre empresa">
+                            </div>
+                            <div class="row">
+                                <ul class="list-inline d-flex flex-row">
+                                    <li class="inline-item">
+                                        <label for="nombreCargo">Cargo</label>
+                                        <input type="text" class="form-control" id="nombreCargo">
+                                    </li>
+                                    <li class="inline-item">
+                                        <label for="valorAntiguedad">Antigüedad</label>
+                                        <input type="text" class="form-control" id="valorAntiguedad">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="list-inline d-flex flex-row">
+                                    <li class="inline-item">
+                                        <label for="nombrePersona">Nombre</label>
+                                        <input type="text" class="form-control" id="nombrePersona">
+                                    </li>
+                                    <li class="inline-item d-flex flex-row">
+                                        <div >Sexo</div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="sexoMasculino" value="option1">
+                                            <label class="form-check-label" for="sexoMasculino">M</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="sexoFemenino" value="option1">
+                                            <label class="form-check-label" for="sexoFemenino">F</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="list-inline d-flex flex-row">
+                                    <li class="inline-item d-flex flex-row">
+                                        <label for="fechaNacimiento">Nacimiento</label>
+                                        <input type="text" class="form-control" id="fechaNacimiento">
+                                    </li>
+                                    <li class="inline-item d-flex flex-row">
+                                        <label for="edadPersona">Edad</label>
+                                        <input type="text" class="form-control" id="edadPersona">
+                                    </li>
+                                    <li class="inline-item d-flex flex-row">
+                                        <label for="lugarProcedencia">Lugar</label>
+                                        <input type="text" class="form-control" id="lugarProcedencia">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col d-flex flex-row">
+                            <div class="col d-flex flex-column">
+                                <div class="fs-4">Firma</div>
+                            </div>
+                            <div class="col d-flex flex-column">
+                                <div class="fs-4 align-self-center">Foto</div>
+                                <image class="image-fluid align-self-center" width="150" height="150"
+                                    src="/images/profile_image.png"></image>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <ul class="list-inline d-flex flex-row">
+                            <li class="inline-item d-flex flex-row">
+                                <label for="direccion">Dirección</label>
+                                <input type="text" class="form-control" id="direccion">
+                            </li>
+                            <li class="inline-item d-flex flex-row">
+                                <label for="emailPersona">Email</label>
+                                <input type="text" class="form-control" id="emailPersona">
+                            </li>
+                            <li class="inline-item d-flex flex-row">
+                                <label for="celularPersona">Celular</label>
+                                <input type="text" class="form-control" id="celularPersona">
+                            </li>
+                            <li class="inline-item d-flex flex-row">
+                                <label for="pesoPersona">Peso Kg</label>
+                                <input type="text" class="form-control" id="pesoPersona">
+                            </li>
+                            <li class="inline-item d-flex flex-row">
+                                <label for="alturaPersona">Altura</label>
+                                <input type="text" class="form-control" id="alturaPersona">
+                            </li>
+                            <li class="inline-item d-flex flex-row">
+                                <label for="imcPersona">I.M.C</label>
+                                <input type="text" class="form-control" id="imcPersona" disabled>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <ul class="list-inline d-flex flex-row">
+                            <li class="inline-item d-flex flex-row">
+                                <div>N.Educativo</div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="nivelEdPrimaria" value="option1">
+                                    <label class="form-check-label" for="nivelEdPrimaria">Primaria</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="nivelEdSecundaria" value="option1">
+                                    <label class="form-check-label" for="nivelEdSecundaria">Secundaria</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="nivelEdTecnico" value="option1">
+                                    <label class="form-check-label" for="nivelEdTecnico">Técnico</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="nivelEdTecnologo" value="option1">
+                                    <label class="form-check-label" for="nivelEdTecnologo">Técnologo</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="nivelEdUniversitario" value="option1">
+                                    <label class="form-check-label" for="nivelEdUniversitario">Universitario</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="nivelEdPostgrado" value="option1">
+                                    <label class="form-check-label" for="nivelEdPostgrado">Postgrado</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="nivelEdNinguno" value="option1">
+                                    <label class="form-check-label" for="nivelEdNinguno">Ninguno</label>
+                                </div>
+                            </li>
+                            <li class="inline-item">
+                                <label for="yearCursado">Ultimo año cursado</label>
+                                <input type="text" class="form-control" id="yearCursado">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <ul class="list-inline d-flex flex-row">
+                            <li class="inline-item d-flex flex-row">
+                                <div>Estado Civil</div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="estCivilSoltero" value="option1">
+                                    <label class="form-check-label" for="estCivilSoltero">Soltero(a)</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="estCivilCasado" value="option1">
+                                    <label class="form-check-label" for="estCivilCasado">Casado(a)</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="estCivilViudo" value="option1">
+                                    <label class="form-check-label" for="estCivilViudo">Viudo(a)</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="estCivilUnionLibre" value="option1">
+                                    <label class="form-check-label" for="estCivilUnionLibre">Unión Libre</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="estCivilSeparado" value="option1">
+                                    <label class="form-check-label" for="estCivilSeparado">Separado(a)</label>
+                                </div>
+                            </li>
+                            <li class="inline-item d-flex flex-row">
+                                <label for="numeroDeHijos">No. Hijos</label>
+                                <input type="text" class="form-control" id="numeroDeHijos">
+                            </li>
+                            <li class="inline-item d-flex flex-row">
+                                <label for="responde">Responde</label>
+                                <input type="text" class="form-control" id="responde">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <ul class="list-inline d-flex flex-row">
+                            <li class="inline-item d-flex flex-row">
+                                <div>EPS</div>
+                                <select name="" id="" class="form-select">
+                                    <option value=""> </option>
+                                </select>
+                            </li>
+                            <li class="inline-item d-flex flex-row">
+                                <div>AFP</div>
+                                <select name="" id="" class="form-select">
+                                    <option value=""> </option>
+                                </select>
+                            </li>
+                            <li class="inline-item d-flex flex-row">
+                                <div>ARL</div>
+                                <select name="" id="" class="form-select">
+                                    <option value=""> </option>
+                                </select>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <ul class="list-inline d-flex flex-row">
+                            <li class="inline-item d-flex flex-row">
+                                <label for="descripcionLabor">Descripión de la labor</label>
+                                <input type="text" class="form-control" id="descripcionLabor">
+                            </li>
+                            <li class="inline-item d-flex flex-row">
+                                <label for="equiposMaquinaria">Equipos y Maquinaria</label>
+                                <input type="text" class="form-control" id="equiposMaquinaria">
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row">
+                        <ul class="list-inline d-flex flex-row">
+                            <li class="inline-item d-flex flex-row">
+                                <label for="herramientasTrabajo">Herramientas de Trabajo</label>
+                                <input type="text" class="form-control" id="herramientasTrabajo">
+                            </li>
+                            <li class="inline-item d-flex flex-row">
+                                <label for="valorEPP">EPP</label>
+                                <input type="text" class="form-control" id="valorEPP">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- seccion 2 del formulario #1 / Antecedentes personales-->
+            <div class="row">
+                <div class="row">
+                    <ul class="list-inline d-flex flex-row justify-content-around">
+                        <li class="inline-item">
+
+                        </li>
+                        <li class="inline-item">
+                            <div class="fs-4">Antecedentes Personales</div>
+                        </li>
+                        <li class="inline-item">
+
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <ul class="list-inline d-flex flex-row justify-content-around">
+                        <li class="inline-item">
+                            <div class="fs-4">
+                                Patológicos
+                            </div>
+                        </li>
+                        <li class="inline-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="patValorAsma">
+                                <label class="form-check-label" for="patValorAsma">
+                                    Asma
+                                </label>
+                            </div>
+                        </li>
+                        <li class="inline-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="patValorEPOC">
+                                <label class="form-check-label" for="patValorEPOC">
+                                    EPOC
+                                </label>
+                            </div>
+                        </li>
+                        <li class="inline-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="patValorBronquitis">
+                                <label class="form-check-label" for="patValorBronquitis">
+                                    Bronquitis
+                                </label>
+                            </div>
+                        </li>
+                        <li class="inline-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="patValorNeumonia">
+                                <label class="form-check-label" for="patValorNeumonia">
+                                    Neumonia
+                                </label>
+                            </div>
+                        </li>
+                        <li class="inline-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="patValorTBC">
+                                <label class="form-check-label" for="patValorTBC">
+                                    TBC
+                                </label>
+                            </div>
+                        </li>
+                        <li class="inline-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="patValorRinitis">
+                                <label class="form-check-label" for="patValorRinitis">
+                                    Rinitis Alérgica
+                                </label>
+                            </div>
+                        </li>
+                        <li class="inline-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="patValorGripe">
+                                <label class="form-check-label" for="patValorGripe">
+                                    Gripe Frecuente
+                                </label>
+                            </div>
+                        </li>
+                        <li class="inline-item">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="patValorCifoescoliosis">
+                                <label class="form-check-label" for="patValorCifoescoliosis">
+                                    Cifoescoliosis
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="row">
+
+                        <ul class="list-inline d-flex flex-row justify-content-around">
+                            <li class="inline-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="situacionQuirurgica">
+                                    <label class="form-check-label" for="situacionQuirurgica">
+                                        Quirúrgicos
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="inline-item d-flex flex-row">
+                                <label for="cualesQuirurgicos">¿Cuáles?</label>
+                                <input type="text" class="form-control" id="cualesQuirurgicos">
+                            </li>
+                        </ul>
+
+                        <ul class="list-inline d-flex flex-row justify-content-around">
+                            <li class="inline-item">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value=""
+                                        id="situacionFarmacologicos">
+                                    <label class="form-check-label" for="situacionFarmacologicos">
+                                        Farmacológicos
+                                    </label>
+                                </div>
+                            </li>
+                            <li class="inline-item d-flex flex-row">
+                                <label for="cualesFarmacologicos">¿Cuáles?</label>
+                                <input type="text" class="form-control" id="cualesFarmacologicos">
+                            </li>
+                        </ul>
+
+
+                        <ul class="list-inline">
+                            <li class="inline-item">
+                                <input type="checkbox" class="form-check-input" id="situacionFumador">
+                                <label for="situacionFumador">Fuma</label>
+                            </li>
+                        </ul>
+
+
+                        <ul class="list-inline">
+                            <li class="inline-item">
+                                <input type="checkbox" class="form-check-input" id="situacionExfumador">
+                                <label for="situacionExfumador">Exfumador</label>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
+
 </html>
