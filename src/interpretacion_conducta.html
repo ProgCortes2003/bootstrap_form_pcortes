@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Interpretación y Conducta</title>
+</head>
+
+<body>
+    <section class="container-md d-grid bg-primary">
+        <div class="row">
+            <div class="row">
+                <p class="fs-1 ">Historia de Salud</p>
+            </div>
+            <div class="row ">
+                <ul class="list-inline d-flex flex-row justify-content-between">
+                    <li class="list-inline-item fs-5">Paciente</li>
+                    <li class="list-inline-item fs-5">Edad: 18</li>
+                    <li class="list-inline-item fs-5">Doctor</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Cuerpo del formulario -->
+        <div class="row">
+            <!-- header del formulario -->
+            <div class="row">
+                <ul class="nav d-flex flex-row justify-content-around bg-body-tertiary">
+                    <li class="nav-item">
+                        <a href="./datos_personales.html" class="nav-link align-self-center">Datos Personales y
+                            Antecedentes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./interpretacion_conducta.html" class="nav-link align-self-center">Interpretación y
+                            Conducta</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Sección 1 del formulario-->
+            <div class="row">
+                <div class="row">
+                    <ul class="list-inline d-flex flex-row justify-content-around">
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="actividadDeportiva">
+                            <label for="actividadDeportiva" class="form-check-label">Actividad Deportiva</label>
+                        </li>
+                        <li class="inline-item d-flex flex-row">
+                            <label for="tipoActividad">Tipo de actividad</label>
+                            <input type="text" class="form-control" id="tipoActividad">
+                        </li>
+                        <li class="inline-item d-flex flex-row">
+                            <label for="frecuencia">Frecuencia</label>
+                            <input type="text" class="form-control" id="frecuencia">
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <ul class="list-inline d-flex flex-row justify-content-around">
+                        <li class="inline-item">
+                            <div>Antecedentes Familiares</div>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="antFamiliarAsma">
+                            <label for="antFamiliarAsma" class="form-check-label">Asma</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="antFamiliarEPOC">
+                            <label for="antFamiliarEPOC" class="form-check-label">EPOC</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="antFamiliarBronquitis">
+                            <label for="antFamiliarBronquitis" class="form-check-label">Bronquitis</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="antFamiliarNeumonia">
+                            <label for="antFamiliarNeumonia" class="form-check-label">Neumonia</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" class="form-check-input" value="" id="antFamiliarCancerPulmon">
+                            <label for="antFamiliarCancerPulmon" class="form-check-label">Cancer de Pulmón</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="antFamiliarRinitis">
+                            <label for="antFamiliarRinitis" class="form-check-label">Rinitis</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="antFamilarTBC">
+                            <label for="antFamilarTBC" class="form-check-label">TBC</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="antFamiliarNoRefiere">
+                            <label for="antFamiliarNoRefiere" class="form-check-label">No Refiere</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <ul class="list-inline d-flex flex-row justify-content-around">
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="antFamiliarOtros">
+                            <label for="antFamiliarOtros" class="form-check-label">Otros</label>
+                        </li>
+                        <li class="inline-item">
+                            <label for="antFamiliarOtrosEspecificar"></label>
+                            <input type="text" class="form-control" value="" id="antFamiliarOtrosEspecificar">
+                        </li>
+                        <li class="inline-item d-flex flex-row">
+                            <label for="antFamiliarParentescoEspecificar">Parentesco</label>
+                            <input type="text" class="form-control" value="" id="antFamiliarParentescoEspecificar">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Antecedentes Laborales -->
+            <div class="row">
+                <div class="row d-flex flex-row justify-content-center">
+                    Antecedentes Laborales
+                </div>
+                <div class="row">
+                    <ul class="list-inline d-flex flex-row justify-content-around">
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="antLaboralesPolvo">
+                            <label for="antLaboralesPolvo" class="form-check-label">Polvo</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="antLaboralesGas">
+                            <label for="antLaboralesGas" class="form-check-label">Gas</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="antLaboralesVapores">
+                            <label for="antLaboralesVapores" class="form-check-label">Vapores</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="antLaboralesSolvente">
+                            <label for="antLaboralesSolvente" class="form-check-label">Solvente</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="antLaboralesNeblina">
+                            <label for="antLaboralesNeblina" class="form-check-label">Neblina</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="antLaboralesToxicas">
+                            <label for="antLaboralesToxicas" class="form-check-label">Toxicas</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="antLaboralesOtros">
+                            <label for="antLaboralesOtros" class="form-heck-label">Otros</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="text" class="form-control" value="" id="antLaboralesOtrosEspecificar">
+                        </li>
+                        <li class="inline-item d-flex flex-row">
+                            <label for="">Tiempo de Exposición</label>
+                            <input type="text" class="form-control" value=""
+                                id="antLaboralesEspecificarTiempoExposicion">
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <ul class="list-inline d-flex flex-row justify-content-around">
+                        <li class="inline-item d-flex flex-row">
+                            <label for="antLaboralesEspecificarEmpresa">Empresa</label>
+                            <input type="text" class="form-control" value="" id="antLaboralesEspecificarEmpresa">
+                        </li>
+                        <li class="inline-item d-flex flex-row">
+                            <label for="antLaboralesEspecificarCargo">Cargo</label>
+                            <input type="text" class="form-control" value="" id="antLaboralesEspecificarCargo">
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="antLaboralesEPP">
+                            <label for="antLaboralesEPP" class="form-check-label">Utiliza EPP?</label>
+                        </li>
+                        <li class="inline-item">
+                            <select name="" id="" class="form-select">
+                                <option value=""> </option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Revisión Sistema Respiratorio-->
+            <div class="row">
+                <div class="row d-flex flex-row justify-content-center">
+                    Revisión Sistema Respiratorio
+                </div>
+                <div class="row">
+                    <ul class="list-inline d-flex flex-row justify-content-around">
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value=""
+                                id="revSistemaRespiratorioDisneaReposo">
+                            <label for="revSistemaRespiratorioDisneaReposo" class="form-check-label">Disnea en
+                                Reposo</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value=""
+                                id="revSistemaRespiratorioDisneaEsfuerzo">
+                            <label for="revSistemaRespiratorioDisneaEsfuerzo" class="form-check-label">Disnea Esfuerzo
+                                físico</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="revSistemaRespiratorioTosSeca">
+                            <label for="revSistemaRespiratorioTosSeca" class="form-check-label">Tos Seca</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value=""
+                                id="revSistemaRespiratorioTosProductiva">
+                            <label for="revSistemaRespiratorioTosProductiva" class="form-check-label">Tos Productiva
+                                (Espectoración)</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value=""
+                                id="revSistemaRespiratorioDolorEnPecho">
+                            <label for="revSistemaRespiratorioDolorEnPecho" class="form-check-label">Dolor en el
+                                pecho</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <ul class="list-inline d-flex flex-row justify-content-around">
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value=""
+                                id="revSistemaRespiratorioLagrimeo">
+                            <label for="revSistemaRespiratorioLagrimeo" class="form-check-label">Lagrimeo</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value=""
+                                id="revSistemaRespiratorioRinorrea">
+                            <label for="revSistemaRespiratorioRinorrea" class="form-check-label">Rinorrea</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-control-input" value=""
+                                id="revSistemaRespiratorioGripeFrecuente">
+                            <label for="revSistemaRespiratorioGripeFrecuente" class="form-check-label">Gripe
+                                Frecuente</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="revSistemaRespiratorioOtros">
+                            <label for="revSistemaRespiratorioOtros" class="form-check-label">Otros</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="text" class="form-control" value=""
+                                id="revSistemaRespiratorioOtrosEspecificar">
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value=""
+                                id="revSistemaRespiratorioNoRefiere">
+                            <label for="revSistemaRespiratorioNoRefiere" class="form-check-label">No Refiere</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Interpretación de los resultado de Espirometría -->
+            <div class="row">
+                <div class="row d-flex flex-row justify-content-center">
+                    Interpretación de los resultado de Espirometría
+                </div>
+                <div class="row">
+                    <ul class="list-inline d-flex flex-row justify-content-around">
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="resultadoEspirometriaNormal">
+                            <label for="resultadoEspirometriaNormal" class="form-check-label">Normal</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value=""
+                                id="resultadoEspirometriaRestriccion">
+                            <label for="resultadoEspirometriaRestriccion" class="form-check-label">Restricción</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value=""
+                                id="resultadoEspirometriaObstruccion">
+                            <label for="resultadoEspirometriaObstruccion" class="form-check-label">Obstrucción</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="resultadoEspirometriaMixto">
+                            <label for="resultadoEspirometriaMixto" class="form-check-label">Mixto</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="resultadoEspirometriaLeve">
+                            <label for="resultadoEspirometriaLeve" class="form-check-label">Leve</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="resultadoEspirometriaModerado">
+                            <label for="resultadoEspirometriaModerado" class="form-check-label">Moderado</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="resultadoEspirometriaSevero">
+                            <label for="resultadoEspirometriaSevero" class="form-check-label">Severo</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--Especificaciones del equipo / Conducta-->
+            <div class="row">
+                <div class="row">
+                    <ul class="list-inline d-flex flex-row justify-content-around">
+                        <li class="inline-item">Especificaciones del Equipo</li>
+                        <li class="inline-item">Conducta</li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <ul class="list-inline d-flex flex-row justify-content-around">
+                        <li class="inline-item d-flex flex-row justify-content-around">
+                            <div class="d-flex flex-row">
+                                <label for="especificacionesEquipoEspirometro">Espirometro</label>
+                                <input type="text" class="form-control" value="" id="especificacionesEquipoEspirometro">
+                            </div>
+                            <div class="d-flex flex-row">
+                                <label for="especificacionesEquipoFechaCalibracion">Fecha de Calibración</label>
+                                <input type="text" class="form-control" value=""
+                                    id="especificacionesEquipoFechaCalibracion">
+                            </div>
+                        </li>
+                        <li class="inline-item d-flex flex-row justify-content-around">
+                            <div class="d-flex flex-row">
+                                <input type="radio" class="form-check-input" value="" id="conductaApto">
+                                <label for="conductaApto" class="form-check-label">APTO</label>
+                            </div>
+                            <div class="d-flex flex-row">
+                                <input type="radio" class="form-check-input" value="" id="conductaNoApto">
+                                <label for="conductaNoApto" class="form-check-label">NO APTO</label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Observaciones -->
+            <div class="row">
+                <div class="row d-flex flex-row justify-content-center">
+                    Observaciones
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="row">
+                            <div class="row">
+                                <ul class="list-inline d-flex flex-row justify-content-around">
+                                    <li class="inline-item">
+                                        <input type="radio" class="form-check-input" value="" id="observacionesRemisionEPS">
+                                        <label for="observacionesRemisionEPS" class="form check-label">REMISION EPS</label>
+                                    </li>
+                                    <li class="inline-item">
+                                        <input type="radio" class="form-check-input" value="" id="observacionesDejarDeFumar">
+                                        <label for="observacionesDejarDeFumar" class="form check-label">DEJAR DE FUMAR</label>
+                                    </li>
+                                    <li class="inline-item">
+                                        <input type="radio" class="form-check-input" value="" id="observacionesRepetirEspirometria">
+                                        <label for="" class="form check-label">REPETIR ESPIROMETRIA</label>
+                                    </li>
+                                    <li class="inline-item">
+                                        <input type="radio" class="form-check-input" value="" id="observacionesControlEnSeisMeses">
+                                        <label for="observacionesControlEnSeisMeses" class="form check-label">CONTROL EN SEIS MESES</label>
+                                    </li>
+                                    <li class="inline-item">
+                                        <input type="radio" class="form-check-input" value="" id="observacionesIngresoAlSVE">
+                                        <label for="observacionesIngresoAlSVE" class="form check-label">INGRESO AL SVE</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="row">
+                                <ul class="list-inline d-flex flex-row justify-content-around">
+                                    <li class="inline-item">
+                                        <input type="radio" class="form-check-input" value="" id="observacionesBajarDePeso">
+                                        <label for="observacionesBajarDePeso" class="form check-label">CONTROL HABITOS NUTRICIONALES (BAJAR DE PESO)</label>
+                                    </li>
+                                    <li class="inline-item">
+                                        <input type="radio" class="form-check-input" value="" id="observacionesUsoProteccionPersonal">
+                                        <label for="observacionesUsoProteccionPersonal" class="form check-label">USO DE PROTECCION PERSONAL</label>
+                                    </li>
+                                    <li class="inline-item">
+                                        <input type="radio" class="form-check-input" value="" id="observacionesRealizarActividadFisica">
+                                        <label for="observacionesRealizarActividadFisica" class="form check-label">REALIZAR ACTIVIDAD FISICA</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1 d-flex flex-column justify-content-end">
+                        <button type="button" class="btn btn-warning">Borrar</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <ul class="list-inline d-flex flex-row justify-content-start">
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="observacionesHistoriaDeSaludCerrada">
+                            <label for="observacionesHistoriaDeSaludCerrada" class="form-check-label">Historia de Salud Respiratoria Cerrada</label>
+                        </li>
+                        <li class="inline-item">
+                            <input type="checkbox" class="form-check-input" value="" id="observacionesEducacionAlPaciente">
+                            <label for="observacionesEducacionAlPaciente" class="form-check-label">Educación al Paciente</label>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>
