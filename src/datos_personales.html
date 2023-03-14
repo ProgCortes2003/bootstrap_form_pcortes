@@ -57,14 +57,14 @@
                                     <li class="inline-item d-flex flex-row">
                                         <div>
                                             <label for="numeroDocumento"></label>
-                                            <input type="text" class="form-control" id="numeroDocumento"
+                                            <input type="number" class="form-control" id="numeroDocumento"
                                                 placeholder="No. de Documento">
                                         </div>
                                     </li>
                                     <li class="inline-item d-flex flex-row">
                                         <div>
                                             <label for="fecha">Fecha</label>
-                                            <input type="text" class="form-control" id="fecha">
+                                            <input type="date" class="form-control" id="fecha">
                                         </div>
                                     </li>
                                 </ul>
@@ -102,7 +102,7 @@
                                     </li>
                                     <li class="inline-item">
                                         <input type="text" class="form-control" id="nombreEmpresa"
-                                            placeholder="Nombre empresa">
+                                            placeholder="NIT de la Empresa">
                                     </li>
                                 </ul>
                             </div>
@@ -124,7 +124,7 @@
                             </div>
                             <div class="row mt-3">
                                 <ul class="list-inline d-flex flex-row gap-3">
-                                    <li class="inline-item d-flex flex-row gap-3">
+                                    <li class="inline-item d-flex flex-row gap-3 w-100">
                                         <label for="nombrePersona">Nombre</label>
                                         <input type="text" class="form-control" id="nombrePersona">
                                     </li>
@@ -137,7 +137,7 @@
                                         </div>
                                         <div class="form-check form-check-inline">
                                             <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                                id="sexoFemenino" value="option1">
+                                                id="sexoFemenino" value="option2">
                                             <label class="form-check-label" for="sexoFemenino">F</label>
                                         </div>
                                     </li>
@@ -147,11 +147,11 @@
                                 <ul class="list-inline d-flex flex-row gap-3">
                                     <li class="inline-item d-flex flex-row gap-3">
                                         <label for="fechaNacimiento">Nacimiento</label>
-                                        <input type="text" class="form-control" id="fechaNacimiento">
+                                        <input type="date" class="form-control" id="fechaNacimiento">
                                     </li>
                                     <li class="inline-item d-flex flex-row gap-3">
                                         <label for="edadPersona">Edad</label>
-                                        <input type="text" class="form-control" id="edadPersona">
+                                        <input type="number" class="form-control" id="edadPersona">
                                     </li>
                                     <li class="inline-item d-flex flex-row gap-3">
                                         <label for="lugarProcedencia">Lugar</label>
@@ -162,13 +162,13 @@
                         </div>
                         <div class="col d-flex flex-row mt-3 ">
                             <div class="col d-flex flex-column">
-                                <div class="fs-4">Firma</div>
+                                <div class="fs-4 text-center">Firma</div>
                             </div>
                             <div class="col d-flex flex-column">
                                 <div class="fs-4 align-self-center row">Foto</div>
                                 <div class="row mt-5 ">
                                     <image class="image-fluid align-self-center" width="200" height="200"
-                                        src="/bootstrap_form_pcortes/images/profile_image.png"></image>
+                                        src="/images/profile_image.png"></image>
                                 </div>
                             </div>
                         </div>
@@ -181,19 +181,19 @@
                             </li>
                             <li class="inline-item d-flex flex-row gap-2">
                                 <label for="emailPersona">Email</label>
-                                <input type="text" class="form-control" id="emailPersona">
+                                <input type="email" class="form-control" id="emailPersona">
                             </li>
                             <li class="inline-item d-flex flex-row gap-2">
                                 <label for="celularPersona">Celular</label>
-                                <input type="text" class="form-control" id="celularPersona">
+                                <input type="number" class="form-control" id="celularPersona">
                             </li>
                             <li class="inline-item d-flex flex-row gap-2">
                                 <label for="pesoPersona">Peso Kg</label>
-                                <input type="text" class="form-control" id="pesoPersona">
+                                <input type="number" class="form-control" id="pesoPersona">
                             </li>
                             <li class="inline-item d-flex flex-row gap-2">
                                 <label for="alturaPersona">Altura</label>
-                                <input type="text" class="form-control" id="alturaPersona">
+                                <input type="number" class="form-control" id="alturaPersona">
                             </li>
                             <li class="inline-item d-flex flex-row gap-2">
                                 <label for="imcPersona">I.M.C</label>
@@ -202,7 +202,7 @@
                         </ul>
                     </div>
                     <div class="row mt-3">
-                        <ul class="list-inline d-flex flex-row gap-1">
+                        <ul class="list-inline d-flex flex-row gap-3">
                             <li class="inline-item d-flex flex-row align-items-center gap-2">
                                 <div class="col">N.Educativo</div>
                                 <div class="col d-flex flex-row border border-secondary">
@@ -243,13 +243,8 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="inline-item">
-                                <label for="yearCursado">Ultimo año cursado</label>
-                            </li>
-                            <li class="inline-item">
-                                <input type="text" class="form-control" id="yearCursado">
-                            </li>
                         </ul>
+
                     </div>
                     <div class="row mt-3">
                         <ul class="list-inline d-flex flex-row gap-3 align-items-center">
@@ -258,34 +253,34 @@
                                 <div class="border border-secondary d-flex flex-row gap-1">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="estCivilSoltero" value="option1">
+                                            id="estCivilSoltero" value="opt1">
                                         <label class="form-check-label" for="estCivilSoltero">Soltero(a)</label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="estCivilCasado" value="option1">
+                                            id="estCivilCasado" value="opt2">
                                         <label class="form-check-label" for="estCivilCasado">Casado(a)</label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="estCivilViudo" value="option1">
+                                            id="estCivilViudo" value="opt3">
                                         <label class="form-check-label" for="estCivilViudo">Viudo(a)</label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="estCivilUnionLibre" value="option1">
+                                            id="estCivilUnionLibre" value="opt4">
                                         <label class="form-check-label" for="estCivilUnionLibre">Unión Libre</label>
                                     </div>
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                            id="estCivilSeparado" value="option1">
+                                            id="estCivilSeparado" value="opt5">
                                         <label class="form-check-label" for="estCivilSeparado">Separado(a)</label>
                                     </div>
                                 </div>
                             </li>
                             <li class="inline-item d-flex flex-row">
                                 <label for="numeroDeHijos">No. Hijos</label>
-                                <input type="text" class="form-control" id="numeroDeHijos">
+                                <input type="number" class="form-control" id="numeroDeHijos">
                             </li>
                             <li class="inline-item d-flex flex-row gap-1">
                                 <label for="responde">Responde</label>
@@ -298,19 +293,27 @@
                             <li class="inline-item d-flex flex-row gap-3 w-25">
                                 <div>EPS</div>
                                 <select name="" id="" class="form-select">
-                                    <option value=""> </option>
+                                    <option value="1"> CAPITAL SALUD </option>
+                                    <option value="2"> CAPRECOSA EPS </option>
+                                    <option value="3"> COMPENSAR </option>
+                                    <option value="4"> NUEVA EPS</option>                        
                                 </select>
                             </li>
                             <li class="inline-item d-flex flex-row gap-3 w-25">
                                 <div>AFP</div>
                                 <select name="" id="" class="form-select">
-                                    <option value=""> </option>
+                                    <option value="1"> Colfondos </option>
+                                    <option value="2"> Skandia Administradora </option>
+                                    <option value="3"> Skandia Alternativo </option>
                                 </select>
                             </li>
                             <li class="inline-item d-flex flex-row gap-3 w-25">
                                 <div>ARL</div>
                                 <select name="" id="" class="form-select">
-                                    <option value=""> </option>
+                                    <option value="1"> LA EQUIDAD </option>
+                                    <option value="2"> MAPFRE </option>
+                                    <option value="3"> POSITIVA </option>
+                                    <option value="4"> COLMENA </option>
                                 </select>
                             </li>
                         </ul>
@@ -333,7 +336,7 @@
                                 <label for="herramientasTrabajo">Herramientas de Trabajo</label>
                                 <input type="text" class="form-control" id="herramientasTrabajo">
                             </li>
-                            <li class="inline-item d-flex flex-row w-50">
+                            <li class="inline-item d-flex flex-row w-50 gap-3">
                                 <label for="valorEPP">EPP</label>
                                 <input type="text" class="form-control" id="valorEPP">
                             </li>

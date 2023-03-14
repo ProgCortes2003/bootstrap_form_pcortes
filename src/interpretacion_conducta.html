@@ -105,7 +105,7 @@
                                 </li>
                                 <li class="inline-item d-flex flex-row align-self-center">
                                     <label for="antFamiliarOtrosEspecificar"></label>
-                                    <input type="text" class="form-control" value="" id="antFamiliarOtrosEspecificar">
+                                    <input type="text" class="form-control " value="" id="antFamiliarOtrosEspecificar">
                                 </li>
                             </ul>
                         </li>
@@ -173,11 +173,11 @@
                 </div>
                 <div class="row">
                     <ul class="list-inline d-flex flex-row justify-content-between">
-                        <li class="inline-item d-flex flex-row">
+                        <li class="inline-item d-flex flex-row gap-3">
                             <label for="antLaboralesEspecificarEmpresa">Empresa</label>
                             <input type="text" class="form-control" value="" id="antLaboralesEspecificarEmpresa">
                         </li>
-                        <li class="inline-item d-flex flex-row">
+                        <li class="inline-item d-flex flex-row gap-3">
                             <label for="antLaboralesEspecificarCargo">Cargo</label>
                             <input type="text" class="form-control" value="" id="antLaboralesEspecificarCargo">
                         </li>
@@ -187,7 +187,17 @@
                         </li>
                         <li class="inline-item w-25">
                             <select name="" id="" class="form-select">
-                                <option value=""> </option>
+                                <option value="1"> Protección para trabajos en alturas </option>
+                                <option value="2"> Protección para la cabeza </option>
+                                <option value="3"> Protección auditiva </option>
+                                <option value="4"> Protección respiratoria </option>
+                                <option value="5"> Protección para manos y brazos </option>
+                                <option value="6"> Protección para los ojos </option>
+                                <option value="7"> Protección para cara y ojos </option>
+                                <option value="8"> Protección para el cuerpo </option>
+                                <option value="9"> Protección las piernas y los pies </option>
+                                <option value="10"> Seguridad elétrica </option>
+                                <option value="11"> Ninguna </option>
                             </select>
                         </li>
                     </ul>
@@ -360,7 +370,7 @@
                                 <div class="d-flex flex-row">
                                     <label for="especificacionesEquipoFechaCalibracion" class="fw-bold">Fecha de
                                         Calibración</label>
-                                    <input type="text" class="form-control" value=""
+                                    <input type="date" class="form-control" value=""
                                         id="especificacionesEquipoFechaCalibracion">
                                 </div>
                             </li>
@@ -368,13 +378,17 @@
                     </div>
                     <div class="col border border-secondary">
                         <ul class="list-inline d-flex flex-row justify-content-around w-100 ">
-                            <li class="inline-item">
-                                <input type="radio" class="form-check-input" value="" id="conductaApto">
-                                <label for="conductaApto" class="form-check-label">APTO</label>
-                            </li>
-                            <li class="inline-item">
-                                <input type="radio" class="form-check-input " value="" id="conductaNoApto">
-                                <label for="conductaNoApto" class="form-check-label">NO APTO</label>
+                            <li class="inline-item d-flex flex-row justify-content-around w-75">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="conductoApto" value="option1">
+                                    <label class="form-check-label" for="conductoApto">APTO</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                        id="conductaNoApto" value="option2">
+                                    <label class="form-check-label" for="conductaNoApto">NO APTO</label>
+                                </div>
                             </li>
                         </ul>
                     </div>
@@ -400,30 +414,30 @@
                             <div class="row d-flex flex-row">
                                 <ul class="list-inline d-flex flex-row justify-content-between">
                                     <li class="inline-item">
-                                        <input type="radio" class="form-check-input" value=""
+                                        <input type="radio" class="form-check-input" value="1"
                                             id="observacionesRemisionEPS">
                                         <label for="observacionesRemisionEPS" class="form check-label">REMISION
                                             EPS</label>
                                     </li>
                                     <li class="inline-item">
-                                        <input type="radio" class="form-check-input" value=""
+                                        <input type="radio" class="form-check-input" value="2"
                                             id="observacionesDejarDeFumar">
                                         <label for="observacionesDejarDeFumar" class="form check-label">DEJAR DE
                                             FUMAR</label>
                                     </li>
                                     <li class="inline-item">
-                                        <input type="radio" class="form-check-input" value=""
+                                        <input type="radio" class="form-check-input" value="3"
                                             id="observacionesRepetirEspirometria">
                                         <label for="" class="form check-label">REPETIR ESPIROMETRIA</label>
                                     </li>
                                     <li class="inline-item">
-                                        <input type="radio" class="form-check-input" value=""
+                                        <input type="radio" class="form-check-input" value="4"
                                             id="observacionesControlEnSeisMeses">
                                         <label for="observacionesControlEnSeisMeses" class="form check-label">CONTROL EN
                                             SEIS MESES</label>
                                     </li>
                                     <li class="inline-item">
-                                        <input type="radio" class="form-check-input" value=""
+                                        <input type="radio" class="form-check-input" value="5"
                                             id="observacionesIngresoAlSVE">
                                         <label for="observacionesIngresoAlSVE" class="form check-label">INGRESO AL
                                             SVE</label>
@@ -433,19 +447,19 @@
                             <div class="row">
                                 <ul class="list-inline d-flex flex-row justify-content-between">
                                     <li class="inline-item">
-                                        <input type="radio" class="form-check-input" value=""
+                                        <input type="radio" class="form-check-input" value="1"
                                             id="observacionesBajarDePeso">
                                         <label for="observacionesBajarDePeso" class="form check-label">CONTROL HABITOS
                                             NUTRICIONALES (BAJAR DE PESO)</label>
                                     </li>
                                     <li class="inline-item">
-                                        <input type="radio" class="form-check-input" value=""
+                                        <input type="radio" class="form-check-input" value="2"
                                             id="observacionesUsoProteccionPersonal">
                                         <label for="observacionesUsoProteccionPersonal" class="form check-label">USO DE
                                             PROTECCION PERSONAL</label>
                                     </li>
                                     <li class="inline-item">
-                                        <input type="radio" class="form-check-input" value=""
+                                        <input type="radio" class="form-check-input" value="3"
                                             id="observacionesRealizarActividadFisica">
                                         <label for="observacionesRealizarActividadFisica"
                                             class="form check-label">REALIZAR ACTIVIDAD FISICA</label>
